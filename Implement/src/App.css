@@ -1,0 +1,157 @@
+/* Overall Page Styling */
+
+
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #fdd9b5;
+}
+.logoweb{
+width: 80px;;
+}
+/* Container for Centering */
+.container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  margin-top:10px;
+}
+
+/* Navbar Styling */
+.navbar {
+  width: 97%;
+  background: darkkhaki;
+  padding: 1px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  
+}
+.page-content{
+  
+    padding-top: 40px; /* djust according to navbar height */
+     margin-top: 5px;
+     min-width: 1400px;
+
+  }
+
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: #ff7f50;
+}
+
+nav ul {
+  list-style:none;
+  display: flex;
+  gap: 35px;
+  margin: 10;
+  padding: 10;
+}
+
+nav ul li {
+  display: inline;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+
+nav ul li a:hover {
+  color: #ff7f50;
+}
+
+/* Main Content Styling */
+.content {
+  width: 100%;
+  max-width: 1500px;
+  background: white;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  padding: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 10px; /* Adjust for fixed navbar */
+  padding-top: 40px;
+  
+}
+
+/* Left Side - Text */
+.text-section {
+  width: 50%;
+  text-align: left;
+}
+
+.title {
+  font-size: 28px;
+  color: #ff7f50;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.description {
+  color: #555;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.btn {
+  background: #ff7f50;
+  color: white;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.btn:hover {
+  background: #ff6347;
+}
+
+/* Right Side - Image */
+.image-section {
+  width: 50%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+
+.skin-image {
+  width: 120%;
+  
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .text-section {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .image-section {
+    width: 100%;
+    justify-content: center;
+  }
+}
